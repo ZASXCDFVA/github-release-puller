@@ -1,0 +1,16 @@
+asset-pullers:
+  - name: "Clash Premium Core"
+    owner: "Dreamacro"
+    repository: "clash"
+    tag: "premium"
+    destination: "/srv/clash-updater/"
+    interval: 3600
+    filters:
+      - match: "(.*)linux-amd64(.*)"
+  - name: "Clash Open Source Core"
+    owner: "Dreamacro"
+    repository: "clash"
+    destination: "/srv/clash-updater/"
+    interval: 3600
+    filters:
+      - match: "(.*)linux-amd64(.*)"
